@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mi pagina web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header id="index_header">
+            <div id="logo">
+                <img src="Imagenes/logo_damiano.png" alt="logo damiano">
+            </div>
+            <div id="redes">
+                <aside id="index_aside">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="Imagenes/ico_fb.png" alt="icono facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/?lang=es" target="_blank">
+                                <img src="Imagenes/ico_twitter.png" alt="icono twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                            <img src="Imagenes/ico_insta.png" alt="icono instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://es.pinterest.com/" target="_blank">
+                            <img src="Imagenes/ico_pinterest.png" alt="icono pinterest">
+                        </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </header>
+       
+        
+        <nav id="index_nav">
+          <hr> 
+            <ul>
+                <li><a href="index_pizzeria.html">INICIO</a></li>                
+                <li><a href="local_pizzeria.html" target="_blank">EL LOCAL</a></li>
+                <li><a href="carta.html" target="_blank">CARTA</a></li>
+                <li><a href="elaboracion_pizzeria.html" target="_blank">ELABORACIÓN</a></li>
+                <li><a href="" class="current_window">CLIENTES</a></li>
+            </ul>
+            <hr>
+        </nav>
+        
+        <article id="cliente_article">
+            
+            <h1>Área de clientes</h1>
+            <h2>Identificarse</h2>
+            <section id="identificacion">
+                <form class="formulario" action="Elencargadodeprocesardatos.php" method="post">
+                    <label>
+                        Correo electrónico
+                        <br>
+                        <br>
+                        <input type="email" required>
+                    </label>
+                    <br>
+                    <label>
+                        Password
+                        <br>
+                        <br>
+                        <input type="password" required>
+                    </label>
+                    <br>
+                    <input class="button_large" type="submit" value="Entrar">
+                </form>
+            </section>
+            <hr class="hr_red_disc">
+            <section id="registro">
+                <h2>Identificarse como nuevo cliente</h2>
+                <p>Completa y envía el siguiente formulario para registrarte en nuestra web</p>
+                <form class="formulario" action="" method="post">
+                    <label>
+                        Nombre<br>
+                        <br>
+                        <input type="text" required>
+                    </label>
+                    <br>
+                    <label>
+                        Apellidos<br>
+                        <br>
+                        <input type="text" required>
+                    </label>
+                    <br>
+                    <label>
+                        Correo electrónico<br><br>
+                        <input type="email" required>
+                    </label>
+                    <br>
+                    <label>
+                        Teléfono<br>
+                        <br>
+                        <input type="tel" pattern="[0-9]{9}" required>
+                    </label>
+                    <br>
+                    <label>
+                        Dirección completa<br>
+                        <br>
+                        <input type="text" required>
+                    </label>
+                    <br>
+                    <label>
+                        Código postal<br>
+                        <br>
+                        <input type="text" pattern="[0-9]{5}" required>
+                    </label>
+                    <br>
+                    <label>
+                        Provincia<br>
+                        <br>
+                        <select class="lista_seleccion" name="lista_seleccion">
+                            <option value="coruña">A Coruña</option>
+                            <option value="lugo">Lugo</option>
+                            <option value="ourense">Ourense</option>
+                            <option value="pontevedra">Pontevedra</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label id="radio">
+                        Cómo nos has conocido
+                        <br>
+                        <br>
+                        <input type="radio" id="recomendacion" name="conocido" value="recomendacion">
+                        <label for="recomenacion">Por recomendación, amistad</label>
+                        <br>
+                        <input type="radio" id="redessociales" name="conocido" value="redessociales">
+                        <label for="redes">Redes sociales</label>
+                        <br>
+                        <input type="radio" id="prensa" name="conocido" value="prensa">
+                        <label for="prensa">Prensa</label>
+                    </label>
+                    <br>
+                    <hr ><br>
+                    <input type="checkbox" id="condiciones" name="condiciones" value="condiciones" required>
+                    <label for="condiciones">Acepto y conozco las condiciones de privacidad para registrarme en esta web</label>
+                    <br>
+                    <br>
+                    <input class="button_large" type="submit" value="Alta" >
+                </form>
+            </section>
+        </article>
+        <footer id="index_footer">
+            <hr>
+            <p>&copy; Silvia García Bouza - UDAM1 - Tel 66666666 - pedidos@pizzeriadamiano.com</p>
+            <hr>
+        </footer>
+    </body>
+</html>
+
